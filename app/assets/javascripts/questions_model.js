@@ -88,7 +88,7 @@ function controllerUpdateNewQuestion(serverResponse){
 
 function viewRenderQuestion(question){
 	console.log(question);
-	var colors = ["red", "blue", "goldenrod", "green"];
+	var colors = var colors = ["purple", "orange", "red", "blue", "yellow", "green"];
 	var outerDiv = $('<div class="item">');
 
 	var innerDiv = $("<div class='item-content' data-val=" + question.id + ">")
