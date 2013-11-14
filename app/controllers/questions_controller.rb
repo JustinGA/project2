@@ -65,7 +65,6 @@ class QuestionsController < ApplicationController
 
   def mark_answered
     @question = Question.find(params[:id])
-    # binding.pry
     @question.answered = true
     @question.save
 
