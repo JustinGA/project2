@@ -75,12 +75,13 @@ a.btns {
 
 
 /* packery css */
- {
+
+/*{
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+*/
 /* css for the packery feature 
 .packery {
   background: #FDD;

@@ -11,8 +11,6 @@ Whoa::Application.routes.draw do
   end
  
   root 'welcome#index'
-
-  #resources :questions
   
   resources :users, only: [:index, :new, :create]
 
