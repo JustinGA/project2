@@ -13,22 +13,20 @@
 </a>
  <div class="pointer">Hover me</div>
   <ul id="wheel" class="wheel" data-angle="all">
-    <li class="item"><%= link_to "Home", root_path %></a></li>
-    <li class="item"><%= link_to "Login", new_session_path %></li>
-    <li class="item"><%= link_to "Sign Up", new_user_path %></li>
-    <li class="item"><%= link_to "Questions", questions_path %></li>
-    <li class="item"><%= link_to "Log Out", session_path :method => :delete %></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
     <li class="item"><a href="#home">Contact Us</a></li>
   </ul>
 </div>
 </div>
+<div class="btns">
 <% if logged_in? %>
-<div class="btns">
   <a class="reload btn" href="#">Sign In</a>
-<% end %>   
-<% if !logged_in? %>
-<div class="btns">
-<p><a class="btns" href="https://github.com/nicholalexander/project2" target="_blank">+ On GitHub</a>
+<% else %>
+  <p><a class="btns" href="https://github.com/nicholalexander/project2" target="_blank">+ On GitHub</a></p>
 <% end %>
 </div>
 <h1 class="border"></h1>

@@ -25,7 +25,7 @@ $(function(){
   animationSpeed: "fast", // Entrance animation speed. Can be "instant", "fast", "medium", or "slow". Default: "medium"
   angle: "all", // Angle which the menu will appear. Can be "all", "N", "NE", "E", "SE", "S", "SW", "W", "NW", or even array [0, 360]. Default: "all" or [0, 360]
 });
-})
+});
 
 $(function(){
   $(".rotator .rotate").textrotator({
@@ -33,4 +33,4 @@ $(function(){
   separator: ",",
   speed: 1300
   });
-})
+});
