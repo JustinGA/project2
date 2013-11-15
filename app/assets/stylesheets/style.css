@@ -2,23 +2,14 @@ html {
 height: 100%;
 }
 
-h1.border, h1.questions {
-  border-bottom: 5px solid black;
-  font-size: 3em;
-}
-
 span.dot {
   color: red;
-  font-size: .5em;
+  font-size: .8em;
 }
 
-.upButton {
-  font-size: 3em;
-  color: #df4727;
-  float: left;
-}
+
+
 a.btns {
-display: inline-block;
 border: 2px solid #000;
 padding: 1em 1.25em;
 font-weight: 500;
@@ -40,29 +31,27 @@ position: relative;
 height: 100%;
 }
 
+
 .back {
-text-align: center;
-display: block;
-padding: 20px;
-width: 100%;
-box-sizing: border-box;
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-background: rgba(0, 0, 0, 0.05);
-font-weight: bold;
-font-size: 1em;
-color: black;
--webkit-transition: all 200ms ease-out;
--moz-transition: all 200ms ease-out;
--o-transition: all 200ms ease-out;
-transition: all 200ms ease-out;
+  text-align: center;
+  display: block;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  font-size: 1em;
+  color: black;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
 
 span.container {
   color: red;
-}
-footer {
-  padding: 80px;
-  float: left;
 }
 
 h1.container {
@@ -76,13 +65,19 @@ li.nav {
   display: inline;
 }
 
-a.btns {
-}
-
 p.back {
   color:#777;
   top:5px;
   right:10px;
   text-decoration:none;
 }
+
+span.footer {
+  color:red;
+}
+
+.question {
+  color: red;
+}
+
 

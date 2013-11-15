@@ -7,7 +7,7 @@
 
 <div id="form_wrapper" class="form_wrapper">
 <%= form_for @user, html: {class: "register", id: "register"} do |f| %>
-  <h3>Register</h3>
+  <h3>Register <span class="dot">+</span></h3>
   <div class="column">
     <div>
   <%= f.label :name %>
@@ -44,7 +44,7 @@
 <!-- begin login form -->
 <%= form_tag session_path, :method => :post, id: 'login',
  class: "login active" do %>
-  <h3>Login</h3>
+  <h3>Login <span class="dot">+</span></h3>
   <div>
   <%= label_tag :email %>
   <%= text_field_tag :email %>
@@ -63,8 +63,6 @@
 
 <p class="back"><%= link_to "Back Home", root_path %></p>
     
-
-
 <script type="text/javascript">$(function(){
   console.log('<%= params[:a] %>');
   if ('<%= params[:a] %>' !== 'login') {

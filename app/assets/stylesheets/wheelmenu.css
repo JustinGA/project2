@@ -7,17 +7,14 @@
 }
 
 .wheel {
-  top: 276.5px;
-  left: 229.5px;
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 300px; /* this will determine the diameter of the circle  */
-  height: 150px; /* this will determine the diameter of the circle  */
+  width: 430px; /* this will determine the diameter of the circle */
+  height: 180px; /* this will determine the diameter of the circle */
   visibility: hidden;
-  position: fixed;
+  position: relative;
   display: none;
-  z-index:5;
 }
 
 .wheel-button, .wheel-button:visited {
@@ -64,6 +61,7 @@ color: #34495e;
 font-family: 'Pacifico', cursive;
 font-size: 22px;
 text-align: center;
+margin: 100px;
 }
 
 .reload {
@@ -92,7 +90,7 @@ background: white;
 
 div.btns {
 width: 400px;
-height: 23px;
+height: 50px;
 margin: 50px auto;
 margin-top: 180px;
 padding: 10px;
@@ -103,12 +101,12 @@ text-align: center;
 .wheel li a, .wheel li a:visited{
 text-decoration: none;
 background: rgba(0,0,0,0.65);
-border-radius: 60px;
+border-radius: 40px;
 font-weight: bold;
 padding: 30px;
 text-align: center;
 width: 100px;
-height: 80px;
+height: 150px;
 border: 1px solid black;
 box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 1px rgba(255,255,255,0.5);
 -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 1px rgba(255,255,255,0.5);

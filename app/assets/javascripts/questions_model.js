@@ -58,7 +58,7 @@ function viewRenderAnswerable(question){
 
 //render a question
 function viewRenderQuestion(question){
-  var colors = ["purple", "orange", "red", "blue", "yellow", "green"];
+  var colors = ["black, white"];
   var outerDiv = $('<div class="item">');
 
   var innerDiv = $("<div class='item-content' data-val=" + question.id + ">")

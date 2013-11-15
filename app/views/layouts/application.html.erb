@@ -8,33 +8,8 @@
 </head>
 <body>
 <nav>
-<% if logged_in? %>
-<ul>
-  <li><%= link_to 'All Users', users_path(@user) %></li>
-  <li><%= link_to 'Logout', session_path, :method => :delete %></li>
-</ul>
-<% end %>   
 </nav>
 <%= yield %>
+
 </body>
-
-<footer>
-
-<% if logged_in? #user is logged in %>
-        <br>
-        <br>
-        <br>
-        <br>
-        <%= "#{current_user.name} is currently logged in." %>
-
-<% else %>
-        <br>
-        <br>
-        <br>
-        <br>
-        <%= "No user is currently logged in." %>
-
-<% end %>
-
-</footer>
 </html>

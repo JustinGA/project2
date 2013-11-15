@@ -12,7 +12,7 @@ Whoa::Application.routes.draw do
  
   root 'welcome#index'
 
-  #resources :questions
+  # resources :questions
   
   resources :users, only: [:index, :new, :create]
 

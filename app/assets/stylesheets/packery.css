@@ -10,9 +10,7 @@ body { font-family: sans-serif; }
   background: none;
 }
 
-.packery:hover {
 
-}
 /* clearfix */
 .packery:after {
   content: ' ';
@@ -21,7 +19,7 @@ body { font-family: sans-serif; }
 }
 
 .item {
-  width: 150px;
+  width: 200px;
   height: 100px;
 }
 
@@ -41,8 +39,10 @@ body { font-family: sans-serif; }
 
 /* item has expanded size */
 .item.is-expanded {
-  width: 60%;
-  height: 120px;
+  width: 20%;
+  height: 150px;
+  font-size: 1.5em;
+}
 }
 
 .item:hover { cursor: pointer; }
