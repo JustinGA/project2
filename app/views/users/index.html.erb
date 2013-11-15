@@ -10,6 +10,8 @@
   </h3>
 </div>
 <% @users.each do |u| %>
-	<li><%= u.name %></li>
-  <li><%= link_to "Questions", questions_path %></li>
+	<ul>
+    <%= u.name + "'s" %> 
+    <%= link_to "Questions", questions_path %>
+  </ul>
 <% end %>

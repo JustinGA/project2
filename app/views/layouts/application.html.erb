@@ -10,8 +10,8 @@
 <nav>
 <% if logged_in? %>
 <ul>
-  <li><%= link_to 'All Users', users_path(@user) %></li>
-  <li><%= link_to 'Logout', session_path, :method => :delete %></li>
+  <%= link_to 'All Users', users_path(@user) %> <br>
+  <%= link_to 'Logout', session_path, :method => :delete %> 
 </ul>
 <% end %>   
 </nav>
@@ -25,9 +25,10 @@
         <br>
         <%= "#{current_user.name} is currently logged in." %><br>
         <% if current_user.name != current_user.teacher %>
-          <%= "#{current_user.name} is not a teacher." %>
+          <%= "#{current_user.name} is not a teacher." %> <br>
+          <%= "#{current_user.name} has asked #{current_user.questions.count} questions." %> <br>
+          <%= "#{current_user.name} has voted #{current_user.votes.count} times." %>
         <% end %>
-        <%= "#{current_user.votes}" %>
 
 <% else %>
         <br>
