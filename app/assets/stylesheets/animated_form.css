@@ -1,26 +1,32 @@
-.form_wrapper{
-    background:#fff;
-    border:1px solid #ddd;
-    margin:0 auto;
-    width:350px;
-    font-size:16px;
-    -moz-box-shadow:1px 1px 7px #ccc;
-    -webkit-box-shadow:1px 1px 7px #ccc;
-    box-shadow:1px 1px 7px #ccc;
+* {
+    margin: 0px;
+    padding: 0px;
+} 
+
+.form_wrapper {
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    border: 1px solid rgb(221, 221, 221);
+    margin: 0px auto;
+    width: 350px;
+    font-size: 16px;
+    box-shadow: 1px 1px 7px rgb(204, 204, 204);
 }
+
 
 .form_wrapper h3{
-    padding:20px 30px 20px 30px;
-    background-color:#444;
-    color:#fff;
+    padding:20px 30px;
+    background-color: rgb(68, 68, 68);
+    color:#ddd;
     font-size:25px;
-    border-bottom:1px solid #ddd;
+    border-bottom: 1px solid rgb(221, 221, 221);
 }
 
-form_wrapper form{
+/* add a class that tells us that the form is active and should be visible */
+.form_wrapper form{
     display:none;
     background:#fff;
 }
+
 form.active{
     display:block;
 }
@@ -29,20 +35,21 @@ form.login{
     width:350px;
 }
 form.register{
-    width:500px;
+    width:350px;
 }
 
+/* the columns in the registration form will be floating next to each other: */
+
 .form_wrapper .column{
-    width:47%;
-    float:left;
+    width: 100%;
+    /*float:left;*/
 }
 
 .form_wrapper a{
-    text-decoration:none;
-    color:#777;
-    font-size:12px;
+  text-decoration:none;
+  color:#777;
+  font-size:12px;
 }
-
 .form_wrapper a:hover{
     color:#000;
 }
@@ -53,9 +60,11 @@ form.register{
     margin:10px 0px 0px 0px;
 }
 
+/* We will style the inputs with some nice CSS3 properties, giving them a gradient as background and some neat box shadow: */
+
 .form_wrapper input[type="text"],
 .form_wrapper input[type="password"],
-.form_wrapper input[type="email"]  {
+.form_wrapper input[type="email"] {
     border: solid 1px #E5E5E5;
     margin: 5px 30px 0px 30px;
     padding: 9px;
@@ -88,25 +97,7 @@ form.register{
     background:#feffef;
 }
 
-.form_wrapper .bottom{
-    background-color:#444;
-    border-top:1px solid #ddd;
-    margin-top:20px;
-    clear:both;
-    color:#fff;
-    text-shadow:1px 1px 1px #000;
-}
-
-.form_wrapper .bottom a{
-    display:block;
-    clear:both;
-    padding:10px 30px;
-    text-align:right;
-    color:#ffa800;
-    text-shadow:1px 1px 1px #000;
-}
-
-form_wrapper input[type="submit"] {
+.form_wrapper input[type="submit"] {
     background: #e3e3e3;
     border: 1px solid #ccc;
     color: #333;
@@ -134,3 +125,22 @@ form_wrapper input[type="submit"] {
     box-shadow: 0px 0px 2px #eaeaea inset;
     color: #222;
 }
+
+.form_wrapper .bottom{
+    background-color:#444;
+    border-top:1px solid #ddd;
+    margin-top:20px;
+    clear:both;
+    color:#fff;
+    text-shadow:1px 1px 1px #000;
+}
+
+.form_wrapper .bottom a{
+    display:block;
+    clear:both;
+    padding:10px 30px;
+    text-align:right;
+    color:#ffa800;
+    text-shadow:1px 1px 1px #000;
+}
+

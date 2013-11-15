@@ -30,12 +30,15 @@
   <div>
   <div class="bottom">
   <%= f.submit %>
-  <% end %>
+  
   <%= link_to "You have an account already? Log in here", new_session_path, class: 'linkform', rel: 'login' %>
-    <div class="clear"></div>
-    </div>
+  <div class="clear"></div>
+<% end %>
+</div>  
+    
   </div>
 </div>
+
 <!-- end signup form -->
 
 <!-- begin login form -->
@@ -46,17 +49,21 @@
   <%= label_tag :email %>
   <%= text_field_tag :email %>
   </div>
-  <div class="bottom">
   <div>
   <%= label_tag :password %>
   <%= password_field_tag :password %>
   </div>
+  <div class="bottom">
   <%= submit_tag "Login" %>
   <%= link_to "You don't have an account yet? Register here", new_user_path, class: 'linkform' , rel: 'register'%>
   <div class= "clear"></div>
   </div>
 <% end %>
 <!-- end login form -->
+
+<p class="back"><%= link_to "Back Home", root_path %></p>
+    
+
 
 <script type="text/javascript">$(function(){
   console.log('<%= params[:a] %>');

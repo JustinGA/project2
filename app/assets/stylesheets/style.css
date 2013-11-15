@@ -15,6 +15,7 @@ span.dot {
 .upButton {
   font-size: 3em;
   color: #df4727;
+  float: left;
 }
 a.btns {
 display: inline-block;
@@ -78,5 +79,10 @@ li.nav {
 a.btns {
 }
 
-
+p.back {
+  color:#777;
+  top:5px;
+  right:10px;
+  text-decoration:none;
+}
 
